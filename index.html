@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>    
+ <div class="login-page">
+      <div class="form">
+        <form class="register-form">
+           <input type="text" placeholder="username" name="userid"/>
+           <input type="text" placeholder="password" name="paswrd"/>
+           <input class="text" placeholder="Email or Phone Number" />
+           <button>Create</button>
+           <p class="message">Already Registered? <a href="#">Login</a></p>
+        </form>  
+
+        <form class="login-form">
+           <input type="text" placeholder="user name"/>
+           <input type="password" placeholder="password"/>
+           <button>login</button>
+           <p class="message">Not Registered? <a href="#">Register</a></p>
+        </form>
+      </div>
+ </div>
+
+   <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+
+   <script>
+   $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+   });
+   </script>
+</body>
+</html>
+
+
